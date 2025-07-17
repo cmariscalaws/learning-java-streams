@@ -1,4 +1,4 @@
-package com.amigoscode.examples;
+package com.learning.javastreams.answers;
 
 
 import org.junit.jupiter.api.BeforeEach;

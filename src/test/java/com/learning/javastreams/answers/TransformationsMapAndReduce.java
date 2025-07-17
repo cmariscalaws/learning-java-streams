@@ -1,9 +1,9 @@
-package com.amigoscode.examples;
+package com.learning.javastreams.answers;
 
-import com.amigoscode.beans.Car;
-import com.amigoscode.beans.Person;
-import com.amigoscode.beans.PersonDTO;
-import com.amigoscode.mockdata.MockData;
+import com.learning.javastreams.beans.Car;
+import com.learning.javastreams.beans.Person;
+import com.learning.javastreams.beans.PersonDTO;
+import com.learning.javastreams.mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

@@ -1,13 +1,12 @@
-package com.amigoscode.examples;
+package com.learning.javastreams.answers;
 
 
-import com.amigoscode.beans.Person;
-import com.amigoscode.mockdata.MockData;
+import com.learning.javastreams.beans.Person;
+import com.learning.javastreams.mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class IntStreams {
 

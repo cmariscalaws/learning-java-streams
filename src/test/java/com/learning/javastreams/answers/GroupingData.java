@@ -1,8 +1,8 @@
-package com.amigoscode.examples;
+package com.learning.javastreams.answers;
 
 
-import com.amigoscode.beans.Car;
-import com.amigoscode.mockdata.MockData;
+import com.learning.javastreams.beans.Car;
+import com.learning.javastreams.mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

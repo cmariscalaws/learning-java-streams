@@ -1,4 +1,4 @@
-package com.amigoscode.beans;
+package com.learning.javastreams.beans;
 
 public class PersonDTO {
 

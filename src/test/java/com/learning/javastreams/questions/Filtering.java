@@ -5,6 +5,7 @@ import com.learning.javastreams.mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class Filtering {
@@ -12,6 +13,16 @@ public class Filtering {
     @Test
     public void filter() throws Exception {
         List<Car> cars = MockData.getCars();
+        // less than 2k
+        Predicate<Car> carPredicate = c -> c.getPrice() < 20_000.00;
+        Predicate<Car> yellowCarPredicate = c -> c.getColor().equals("Yellow");
+        List<Car> cheapCars = cars.stream()
+                .filter(carPredicate)
+                .filter(yellowCarPredicate)
+                .toList();
+
+        cheapCars.forEach(System.out::println);
+
     }
 
     @Test

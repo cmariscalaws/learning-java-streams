@@ -2,17 +2,24 @@ package com.learning.javastreams.questions;
 
 import com.learning.javastreams.beans.Car;
 import com.learning.javastreams.beans.Person;
+import com.learning.javastreams.beans.PersonDTO;
 import com.learning.javastreams.mockdata.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 public class TransformationsMapAndReduce {
 
     @Test
     void yourFirstTransformationWithMap() throws IOException {
         List<Person> people = MockData.getPeople();
+        List<PersonDTO> personDTOList = people.stream()
+                .map(PersonDTO::map)
+                .toList();
+
+        personDTOList.forEach(System.out::println);
     }
 
     @Test
